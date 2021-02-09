@@ -37,4 +37,4 @@ def return_figures():
 
     layout_fig = dict(title = 'Speedtest Overview',)
 
-    return dict(data = fig, layout = layout_fig)
+    return [dict(data = fig, layout = layout_fig)]
