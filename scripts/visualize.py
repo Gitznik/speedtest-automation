@@ -35,4 +35,6 @@ def return_figures():
                 opacity=0.4)
     )
 
-    return fig
+    layout_fig = dict(title = 'Speedtest Overview',)
+
+    return dict(data = fig, layout = layout_fig)
