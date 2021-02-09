@@ -2,11 +2,11 @@ from speedtest_app import app
 
 import json, plotly
 from flask import render_template, request, Response, jsonify
-from scripts.data import return_figures
+from scripts.visualize import return_figures
 
 
-#@app.route('/', methods=['POST', 'GET'])
-#@app.route('/index', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
+@app.route('/index', methods=['POST', 'GET'])
 def index():
 
 	# plot ids for the html id tag
