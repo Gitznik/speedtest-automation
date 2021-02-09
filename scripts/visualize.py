@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 def return_figures():
-    results = pd.read_csv('data/result.csv')
+    results = pd.read_csv('scripts/data/result.csv')
     results.timestamp = pd.to_datetime(results.timestamp * 1000000)
 
     fig = go.Figure()

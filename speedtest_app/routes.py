@@ -9,6 +9,8 @@ from scripts.visualize import return_figures
 @app.route('/index', methods=['POST', 'GET'])
 def index():
 
+	figures = return_figures()
+
 	# plot ids for the html id tag
 	ids = ['figure-{}'.format(i) for i, _ in enumerate(figures)]
 
